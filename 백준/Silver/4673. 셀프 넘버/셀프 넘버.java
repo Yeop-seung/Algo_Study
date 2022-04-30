@@ -47,6 +47,7 @@ public class Main {
 				}
 				if (check == true) {
 					sb.append(i).append("\n");
+					
 				}
 			}
 			System.out.println(sb);
