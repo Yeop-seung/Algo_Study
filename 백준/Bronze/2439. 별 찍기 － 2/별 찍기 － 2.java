@@ -1,27 +1,25 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class Main {
 
 	public static void main(String[] args) throws IOException {
 		// TODO 자동 생성된 메소드 스텁
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine());
+		StringBuilder sb = new StringBuilder();
 
-		int a = Integer.parseInt(st.nextToken());
-		String answer = "";
+		int N = Integer.parseInt(br.readLine());
 
-		for (int i = 1; i <= a; i++) {
-			answer = "";
-			for (int j = 0; j < a - i; j++) {
-				answer += " ";
+		for (int i = 0; i < N; i++) {
+			for (int j = i; j < N - 1; j++) {
+				sb.append(" ");
 			}
-			for (int v = 0; v < i; v++) {
-				answer += "*";
+			for (int j = 0; j <= i; j++) {
+				sb.append("*");
 			}
-			System.out.println(answer);
+			sb.append("\n");
 		}
+		System.out.println(sb);
 	}
 }
