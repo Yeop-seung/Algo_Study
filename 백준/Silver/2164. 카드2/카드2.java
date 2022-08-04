@@ -17,10 +17,10 @@ public class Main {
 		for (int i = 1; i <= N; i++) {
 			queue.offer(i);
 		}
-		loop(N);
+		loop();
 	}
 
-	public static void loop(int N) {
+	public static void loop() {
 		if (queue.size() == 1) {
 			System.out.println(queue.poll());
 			return;
@@ -28,6 +28,6 @@ public class Main {
 		queue.poll();
 		int num = queue.poll();
 		queue.offer(num);
-		loop(N - 1);
+		loop();
 	}
 }
