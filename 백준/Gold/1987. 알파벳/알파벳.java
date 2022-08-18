@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
 public class Main {
 	static int R, C, max;
 	static int arr[][];
+	static boolean isSelected[];
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -26,9 +27,9 @@ public class Main {
 				maxIndex = Math.max(maxIndex, (int) (temp[j] - 'A'));
 			}
 		}
-		boolean isSelected[] = new boolean[maxIndex + 1];
+		isSelected = new boolean[maxIndex + 1];
 
-		solve(0, 0, 1, isSelected);
+		solve(0, 0, 1);
 		br.close();
 		sb.append(max);
 		System.out.println(sb);
@@ -36,13 +37,14 @@ public class Main {
 
 	static int d[][] = { { -1, 0 }, { 0, 1 }, { 1, 0 }, { 0, -1 } };
 
-	private static void solve(int yStart, int xStart, int cnt, boolean[] isSelected) {
+	private static void solve(int yStart, int xStart, int cnt) {
 		isSelected[arr[yStart][xStart]] = true;
 		for (int i = 0; i < d.length; i++) {
 			int dy = yStart + d[i][0];
 			int dx = xStart + d[i][1];
 			if (isChecked(dy, dx) && !isSelected[arr[dy][dx]]) {
-				solve(dy, dx, cnt + 1, copy(isSelected));
+				solve(dy, dx, cnt + 1);
+				isSelected[arr[dy][dx]] = false;
 			}
 		}
 		max = Math.max(max, cnt);
@@ -54,7 +56,4 @@ public class Main {
 		return false;
 	}
 
-	private static boolean[] copy(boolean[] isSelected) {
-		return Arrays.copyOf(isSelected, isSelected.length);
-	}
 }
