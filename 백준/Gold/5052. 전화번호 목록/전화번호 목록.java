@@ -26,20 +26,26 @@ public class Main {
 
     private static void solve() {
         HashMap<String, Integer> map = new HashMap<>();
+        // 해쉬맵은 key 값 중복 X
+        // 전화번호를 맵에 넣는다
         for (String temp :
                 num)
             map.put(temp, 1);
 
+        // 맵에 넣은 전화번호를 하나씩 꺼낸다
         for (String temp :
                 num) {
+            // 꺼낸 전화번호에서 한숫자씩 늘려간다
             for (int i = 1; i < temp.length(); i++) {
                 String checkStr = temp.substring(0, i);
+                // 맵 안에 있는지 체크 있으면 NO
                 if(map.containsKey(checkStr)){
                     sb.append("NO").append("\n");
                     return;
                 }
             }
         }
+        // 없으면 YES
         sb.append("YES").append("\n");
         return;
     }
