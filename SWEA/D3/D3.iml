@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/1208. ［S／W 문제해결 기본］ 1일차 － Flatten" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1220. ［S／W 문제해결 기본］ 5일차 － Magnetic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1289. 원재의 메모리 복구하기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1873. 상호의 배틀필드" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2805. 농작물 수확하기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/3282. 0／1 Knapsack" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5215. 햄버거 다이어트" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7272. 안경이 없어！" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

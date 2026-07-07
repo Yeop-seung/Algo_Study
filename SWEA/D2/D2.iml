@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/1859. 백만 장자 프로젝트" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1959. 두 개의 숫자열" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1961. 숫자 배열 회전" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1974. 스도쿠 검증" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
