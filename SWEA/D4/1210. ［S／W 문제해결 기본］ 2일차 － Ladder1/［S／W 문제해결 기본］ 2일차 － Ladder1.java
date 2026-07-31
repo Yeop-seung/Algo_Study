@@ -5,6 +5,48 @@ import java.util.StringTokenizer;
 
 public class Solution {
 	public static void main(String[] args) throws Exception, IOException {
+       //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        StringTokenizer st;
+//        StringBuilder sb = new StringBuilder();
+//
+//        int[][] arr = new int[100][100];
+//        for (int t = 1; t <= 10; t++) {
+//            int T = Integer.parseInt(br.readLine());
+//            sb.append("#").append(T).append(" ");
+//            for (int i = 0; i < arr.length; i++) {
+//                st = new StringTokenizer(br.readLine());
+//                for (int j = 0; j < arr[i].length; j++) {
+//                    arr[i][j] = Integer.parseInt(st.nextToken());
+//                }
+//            }
+//            int x = 0;
+//            int y = 0;
+//            for (int i = 0; i < arr.length; i++) {
+//                if (arr[99][i] == 2) {
+//                    x = i;
+//                    y = 99;
+//                }
+//            }
+//
+//            while (y != 0) {
+//
+//                if (x < 99 && arr[y][x + 1] == 1) {
+//                    while (x < 99 && arr[y][x + 1] == 1) {
+//                        ++x;
+//                    }
+//
+//                } else if (x > 0 && arr[y][x - 1] == 1) {
+//                    while (x > 0 && arr[y][x - 1] == 1) {
+//                        --x;
+//                    }
+//                }
+//                y--;
+//            }
+//            sb.append(x).append("\n");
+//        }
+//        br.close();
+//        sb.setLength(sb.length() - 1);
+//        System.out.println(sb);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
 
@@ -32,7 +74,7 @@ public class Solution {
             }
             sb.append("#").append(testcase).append(" ").append(ans).append("\n");
         }
-        
+
         if (sb.length() != 0)
             sb.setLength(sb.length() - 1);
 
